@@ -9,3 +9,7 @@
 ## Versions
 
 - Node v20.11.1
+
+## Deploy
+
+- Vercel
