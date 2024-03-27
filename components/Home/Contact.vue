@@ -28,6 +28,7 @@
                 decoding="async"
                 width="32"
                 height="32"
+                alt="github"
               />
             </NuxtLink>
           </li>
@@ -44,6 +45,7 @@
                 decoding="async"
                 width="32"
                 height="32"
+                alt="linkedin"
               />
             </NuxtLink>
           </li>
@@ -60,6 +62,7 @@
                 decoding="async"
                 width="32"
                 height="32"
+                alt="codepen"
               />
             </NuxtLink>
           </li>
@@ -76,6 +79,8 @@
           loading="lazy"
           decoding="async"
           class="w-full md:h-full md:absolute md:inset-0 md:scale-110"
+          width="206"
+          height="232"
         />
       </div>
     </section>
