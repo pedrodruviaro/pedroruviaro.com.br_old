@@ -1,7 +1,7 @@
 html,
 body,
 #__nuxt {
-  @apply font-main scroll-smooth;
+  @apply font-main scroll-smooth text-brand-700 bg-brand-100;
 }
 
 h1,
