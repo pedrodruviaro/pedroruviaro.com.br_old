@@ -2,4 +2,5 @@
 
 <template>
   <HomeHero />
+  <HomeContact />
 </template>
