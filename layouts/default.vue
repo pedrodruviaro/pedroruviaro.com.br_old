@@ -1,3 +1,7 @@
 <template>
-  <slot />
+  <div>
+    <UiHeader />
+    <slot />
+    <UiFooter />
+  </div>
 </template>

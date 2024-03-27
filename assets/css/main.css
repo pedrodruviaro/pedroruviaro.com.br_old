@@ -12,3 +12,7 @@ h5,
 h6 {
   @apply font-heading;
 }
+
+.spacer {
+  @apply py-[4rem] lg:py-[4.5rem] xl:py-[5rem];
+}
