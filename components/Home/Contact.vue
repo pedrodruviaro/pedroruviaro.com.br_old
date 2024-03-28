@@ -70,7 +70,7 @@
       </div>
 
       <div
-        class="grid place-items-center absolute bottom-[-20px] right-[-20px] w-48 opacity-[0.05] md:opacity-[1] md:bottom-auto md:right-auto md:relative md:w-auto md:h-full"
+        class="grid place-items-center absolute bottom-[-20px] right-[-20px] w-48 opacity-[0.15] md:opacity-[1] md:bottom-auto md:right-auto md:relative md:w-auto md:h-full"
       >
         <NuxtImg
           src="/images/home-contact-img.svg"

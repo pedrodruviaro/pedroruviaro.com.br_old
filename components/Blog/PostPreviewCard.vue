@@ -12,7 +12,7 @@ const props = defineProps<{
 
 <template>
   <article
-    class="grid gap-7 border border-brand-700 rounded-2xl p-4 custom-shadow flex-1 md:grid-rows-[max-content_1fr] focus:outline-2"
+    class="cursor-pointer grid gap-7 border border-brand-700 rounded-2xl p-4 custom-shadow flex-1 md:grid-rows-[max-content_1fr] focus:outline-2"
     @click="emits('see-single-post', post._path)"
     @keydown.enter="emits('see-single-post', post._path)"
     tabindex="0"
@@ -49,11 +49,17 @@ const props = defineProps<{
 .custom-shadow {
   --offset: 4px;
   box-shadow: var(--offset) var(--offset) #000000;
+  transition: box-shadow 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media (min-width: 1024px) {
   .custom-shadow {
     --offset: 6px;
   }
+}
+
+.custom-shadow:hover,
+.custom-shadow:focus {
+  --offset: 10px;
 }
 </style>

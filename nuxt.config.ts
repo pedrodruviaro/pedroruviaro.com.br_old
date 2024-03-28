@@ -16,4 +16,14 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/main.css"],
+
+  content: {
+    highlight: {
+      theme: "dracula",
+    },
+  },
+
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
 })
