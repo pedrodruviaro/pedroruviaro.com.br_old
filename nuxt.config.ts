@@ -26,4 +26,10 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
+
+  robots: {
+    UserAgent: "*",
+    Allow: "/",
+    Sitemap: (req) => `https://${req.headers.host}/sitemap.xml`,
+  },
 })
