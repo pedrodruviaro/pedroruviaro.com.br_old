@@ -6,5 +6,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <h1>single post</h1>
+  <div>
+    <ContentDoc />
+  </div>
 </template>
