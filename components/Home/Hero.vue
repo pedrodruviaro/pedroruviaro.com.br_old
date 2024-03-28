@@ -27,6 +27,8 @@
           alt="Grafismo"
           aria-hidden="true"
           class="mx-auto"
+          width="380"
+          height="380"
         />
       </div>
     </UiContainer>
