@@ -3,17 +3,16 @@
 <template>
   <UiContainer class="spacer">
     <section
-      class="p-4 bg-brand-700 text-brand-100 rounded-xl max-w-[670px] mx-auto grid gap-6 relative pb-32 overflow-hidden md:pb-10 md:p-10 md:grid-cols-[1.75fr_1fr] md:items-center"
+      class="p-8 bg-brand-700 text-brand-100 rounded-xl max-w-[670px] mx-auto grid gap-6 relative overflow-hidden md:p-10 md:grid-cols-[1.75fr_1fr] md:items-center"
     >
       <div class="grid gap-4">
         <h2 class="font-bold text-2xl md:text-3xl max-w-[15ch]">
           Se interessou pelo meu trabalho?
         </h2>
-        <p class="max-w-[30ch] mb-2">
-          Entre em contato por email ou mande uma mensagem pelas redes sociais.
+        <p class="max-w-[30ch]">
+          Entre em contato por email ou mande uma mensagem pelas redes sociais
+          nos links abaixo.
         </p>
-
-        <SocialLinksList />
       </div>
 
       <div

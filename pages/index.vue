@@ -8,11 +8,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
-    <NuxtLayout>
-      <main>
-        <Home />
-      </main>
-    </NuxtLayout>
-  </div>
+  <main>
+    <Home />
+  </main>
 </template>
