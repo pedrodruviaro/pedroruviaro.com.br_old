@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { loadingPosts, posts } = await usePosts({ limit: 0 })
+const { loadingPosts, posts, fetchPosts } = usePosts({ limit: 0 })
+
+await fetchPosts()
 
 const router = useRouter()
 

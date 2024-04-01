@@ -11,7 +11,8 @@ function handleSeeSinglePost(slug: string) {
   router.push(slug)
 }
 
-const { loadingPosts, posts } = await usePosts({ limit: NUM_OF_POSTS })
+const { loadingPosts, posts, fetchPosts } = usePosts({ limit: NUM_OF_POSTS })
+await fetchPosts()
 </script>
 
 <template>
