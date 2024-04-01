@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { PostPreview } from "~/types"
+const NUM_OF_POSTS = 3
+
 const router = useRouter()
 
 function handleSeeMorePosts() {
@@ -10,16 +11,14 @@ function handleSeeSinglePost(slug: string) {
   router.push(slug)
 }
 
-const { data: posts, pending: loadingPosts } = await useAsyncData(() =>
-  queryContent<PostPreview>().sort({ date: -1 }).limit(3).find()
-)
+const { loadingPosts, posts } = await usePosts({ limit: NUM_OF_POSTS })
 </script>
 
 <template>
   <HomeHero />
   <HomeLatestPosts @see-more-posts="handleSeeMorePosts">
     <template #posts>
-      <BlogPostPreviewCardLoader :loading="loadingPosts" :count="3">
+      <BlogPostPreviewCardLoader :loading="loadingPosts" :count="NUM_OF_POSTS">
         <BlogPostPreviewCard
           @see-single-post="handleSeeSinglePost"
           v-for="post in posts"

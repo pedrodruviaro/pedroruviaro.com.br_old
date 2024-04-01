@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Blog from "~/modules/blog/screens/Blog.vue"
+
 useSeoMeta({
   title: "Blog",
   description: "Meu blog pessoal",
@@ -6,5 +8,5 @@ useSeoMeta({
 </script>
 
 <template>
-  <h1>blog</h1>
+  <Blog />
 </template>

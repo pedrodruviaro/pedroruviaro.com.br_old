@@ -18,8 +18,8 @@ const imagePath = computed(() => {
 <template>
   <article
     class="cursor-pointer grid gap-7 border border-brand-700 rounded-2xl p-4 custom-shadow flex-1 md:grid-rows-[max-content_1fr] focus:outline-2"
-    @click="emits('see-single-post', post._path)"
-    @keydown.enter="emits('see-single-post', post._path)"
+    @click="emits('see-single-post', props.post._path)"
+    @keydown.enter="emits('see-single-post', props.post._path)"
     tabindex="0"
   >
     <div class="overflow-hidden rounded-xl max-h-[170px]">
@@ -35,16 +35,13 @@ const imagePath = computed(() => {
     </div>
 
     <div>
-      <span
-        class="block max-w-max bg-brand-700 text-brand-100 rounded font-semibold text-sm px-3 py-1"
-        >{{ post.tag }}</span
-      >
-      <p class="text-xs mt-2 mb-6">{{ post.date }}</p>
+      <BlogBadgeTag :content="props.post.tag" />
+      <BlogBadgeDate :date="props.post.date" class="mt-2 mb-6" />
       <h3 class="font-bold mb-2 text-lg leading-6 lg:text-xl">
-        {{ post.title }}
+        {{ props.post.title }}
       </h3>
       <p class="text-sm">
-        {{ post.description }}
+        {{ props.post.description }}
       </p>
     </div>
   </article>
