@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/robots",
     "@nuxt/content",
+    "nuxt-marquee",
   ],
 
   googleFonts: {

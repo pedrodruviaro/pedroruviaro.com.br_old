@@ -5,6 +5,10 @@ useSeoMeta({
   title: "Blog",
   description: "Meu blog pessoal",
 })
+
+definePageMeta({
+  layout: "blog",
+})
 </script>
 
 <template>

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: "blog",
+})
+</script>
+
 <template>
   <UiContainer>
     <div class="mt-8">

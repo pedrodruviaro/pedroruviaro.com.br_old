@@ -1,0 +1,67 @@
+<template>
+  <ul class="flex gap-4 items-center">
+    <li>
+      <NuxtLink
+        to="https://github.com/pedrodruviaro"
+        target="_blank"
+        aria-label="Github"
+      >
+        <NuxtImg
+          src="/images/social-icon-github.svg"
+          loading="lazy"
+          decoding="async"
+          width="32"
+          height="32"
+          alt="github"
+        />
+      </NuxtLink>
+    </li>
+
+    <li>
+      <NuxtLink
+        to="https://www.linkedin.com/in/pedroruviaro/"
+        target="_blank"
+        aria-label="Linkedin"
+      >
+        <NuxtImg
+          src="/images/social-icon-linkedin.svg"
+          loading="lazy"
+          decoding="async"
+          width="32"
+          height="32"
+          alt="linkedin"
+        />
+      </NuxtLink>
+    </li>
+
+    <li>
+      <NuxtLink
+        to="https://codepen.io/pedrodruviaro"
+        target="_blank"
+        aria-label="Codepen"
+      >
+        <NuxtImg
+          src="/images/social-icon-codepen.svg"
+          loading="lazy"
+          decoding="async"
+          width="32"
+          height="32"
+          alt="codepen"
+        />
+      </NuxtLink>
+    </li>
+
+    <li>
+      <NuxtLink to="mailto:pedrodruviaro@gmail.com" aria-label="Email">
+        <NuxtImg
+          src="/images/social-icon-email.svg"
+          loading="lazy"
+          decoding="async"
+          width="32"
+          height="32"
+          alt="email"
+        />
+      </NuxtLink>
+    </li>
+  </ul>
+</template>
