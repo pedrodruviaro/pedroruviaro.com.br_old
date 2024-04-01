@@ -17,6 +17,7 @@ const emits = defineEmits<{
     </p>
 
     <slot name="posts" />
+
     <UiButton @click="emits('see-more-posts')" class="mx-auto mt-12"
       >Ver mais</UiButton
     >

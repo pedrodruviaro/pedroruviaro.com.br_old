@@ -3,7 +3,7 @@ title: Os benefícios das variáveis CSS - Organização de código e legibilida
 description: Descubra os benefícios das variáveis CSS. Organização do código, legibilidade aprimorada e maior flexibilidade no desenvolvimento web.
 date: 2023-11-01:01:0:00
 tag: "css"
-image: "/images/CARD_MOCK.png"
+image: "beneficios-variaveis-css.jpg"
 ---
 
 # Os benefícios das variáveis CSS: Organização de código e legibilidade aprimorada

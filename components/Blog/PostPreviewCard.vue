@@ -8,6 +8,11 @@ const emits = defineEmits<{
 const props = defineProps<{
   post: PostPreview
 }>()
+
+const imagePath = computed(() => {
+  const basePath = "/images/"
+  return `${basePath + props.post.image}`
+})
 </script>
 
 <template>
@@ -19,13 +24,13 @@ const props = defineProps<{
   >
     <div class="overflow-hidden rounded-xl max-h-[170px]">
       <NuxtImg
-        :src="post.image"
+        :src="imagePath"
         loading="lazy"
         decoding="async"
         width="300"
         height="170"
         alt=""
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover grayscale"
       />
     </div>
 

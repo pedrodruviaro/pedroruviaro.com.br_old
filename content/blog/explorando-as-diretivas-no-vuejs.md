@@ -3,7 +3,7 @@ title: "Explorando as Diretivas no Vue.js"
 description: "Descubra o poder das diretivas no Vue.js. Aprenda como usar diretivas padrão como v-model, v-show e v-bind, e criar diretivas customizadas para melhorar a usabilidade e aparência de suas aplicações Vue."
 date: 2024-01-23:01:0:00
 tag: "VueJS"
-image: "/images/CARD_MOCK.png"
+image: "explorando-as-diretivas-no-vuejs.jpg"
 ---
 
 # Diretivas no Vue: padrões e customizadas

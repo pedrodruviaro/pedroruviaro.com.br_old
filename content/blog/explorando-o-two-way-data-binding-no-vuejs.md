@@ -3,7 +3,7 @@ title: Explorando o Two-Way Data Binding no Vue.js
 description: Conheça e entenda a sincronização de dados e UI. Código simples para um desenvolvimento ágil.
 date: 2024-01-16:01:0:00
 tag: "VueJS"
-image: "/images/CARD_MOCK.png"
+image: "explorando-o-two-way-data-binding-no-vuejs.jpg"
 ---
 
 # Explorando o Two-Way Data Binding no Vue.js
