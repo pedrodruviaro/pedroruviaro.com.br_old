@@ -12,5 +12,9 @@ definePageMeta({
 </script>
 
 <template>
-  <Blog />
+  <div>
+    <NuxtLayout>
+      <Blog />
+    </NuxtLayout>
+  </div>
 </template>
