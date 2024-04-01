@@ -10,10 +10,20 @@
       </NuxtLink>
 
       <nav class="flex items-center gap-4">
-        <NuxtLink class="font-semibold" to="/">Home</NuxtLink>
-        <NuxtLink class="font-semibold mr-4" to="/blog">Blog</NuxtLink>
+        <NuxtLink class="link" to="/">Home</NuxtLink>
+        <NuxtLink class="link mr-4" to="/blog">Blog</NuxtLink>
         <UiButton>Contato</UiButton>
       </nav>
     </UiContainer>
   </header>
 </template>
+
+<style scoped>
+.link {
+  @apply font-semibold border-b-2 border-transparent relative top-[2px];
+}
+
+.router-link-active {
+  @apply border-brand-700;
+}
+</style>

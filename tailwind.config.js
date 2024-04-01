@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         brand: {
           primary: "#00F2B2",
+          secondary: "#18CCD9",
           100: "#ffffff",
           200: "#FFFBF9",
           300: "#f9f3f0",
