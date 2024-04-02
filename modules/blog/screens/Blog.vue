@@ -12,6 +12,8 @@ function handleSeeSinglePost(slug: string) {
 
 <template>
   <UiContainer class="spacer">
+    <BlogHeroSection />
+
     <section>
       <BlogPostPreviewCardLoader :loading="loadingPosts" :count="3">
         <BlogPostPreviewCard

@@ -11,8 +11,7 @@
 
       <nav class="flex items-center gap-4">
         <NuxtLink class="link" to="/">Home</NuxtLink>
-        <NuxtLink class="link mr-4" to="/blog">Blog</NuxtLink>
-        <UiButton>Contato</UiButton>
+        <NuxtLink class="link" to="/blog">Blog</NuxtLink>
       </nav>
     </UiContainer>
   </header>
@@ -24,6 +23,6 @@
 }
 
 .router-link-active {
-  @apply border-brand-700;
+  @apply border-brand-secondary;
 }
 </style>

@@ -12,7 +12,7 @@
       class="mt-10 lg:mt-14 grid gap-8 md:grid-cols-2 md:items-center"
     >
       <div class="flex flex-col text-center gap-7 items-center">
-        <h6 class="font-black text-3xl">Conecte-se comigo</h6>
+        <h4 class="font-black text-3xl">Conecte-se comigo</h4>
         <SocialLinksList />
       </div>
 

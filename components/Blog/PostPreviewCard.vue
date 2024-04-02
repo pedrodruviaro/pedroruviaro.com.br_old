@@ -27,8 +27,8 @@ const imagePath = computed(() => {
         :src="imagePath"
         loading="lazy"
         decoding="async"
-        width="300"
-        height="170"
+        width="290"
+        height="160"
         alt=""
         class="w-full h-full object-cover grayscale"
       />
@@ -50,8 +50,9 @@ const imagePath = computed(() => {
 <style scoped>
 .custom-shadow {
   --offset: 4px;
-  box-shadow: var(--offset) var(--offset) #000000;
-  transition: box-shadow 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  --shadow-color: #000000;
+  box-shadow: var(--offset) var(--offset) var(--shadow-color);
+  transition: box-shadow 150ms ease-in-out;
 }
 
 @media (min-width: 1024px) {
@@ -62,6 +63,7 @@ const imagePath = computed(() => {
 
 .custom-shadow:hover,
 .custom-shadow:focus {
-  --offset: 10px;
+  --offset: 11px;
+  outline: 2px solid var(--shadow-color);
 }
 </style>
