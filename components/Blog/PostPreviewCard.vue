@@ -18,9 +18,9 @@ const imagePath = computed(() => {
 <template>
   <article
     class="cursor-pointer grid gap-7 bg-brand-100 border border-brand-700 rounded-2xl p-4 custom-shadow flex-1 md:grid-rows-[max-content_1fr] focus:outline-2"
+    tabindex="0"
     @click="emits('see-single-post', props.post._path)"
     @keydown.enter="emits('see-single-post', props.post._path)"
-    tabindex="0"
   >
     <div class="overflow-hidden rounded-xl max-h-[170px]">
       <NuxtImg
@@ -30,6 +30,7 @@ const imagePath = computed(() => {
         width="290"
         height="160"
         alt=""
+        sizes="100vw sm:50vw md:200px lg:300px"
         class="w-full h-full object-cover grayscale"
       />
     </div>
