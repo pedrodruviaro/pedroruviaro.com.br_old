@@ -41,6 +41,7 @@ watch(
       :text="TOP_BANNER_INFOS.text"
       :link="TOP_BANNER_INFOS.link"
       v-show="showTopBanner"
+      v-if="false"
     />
     <UiHeader />
     <slot />
