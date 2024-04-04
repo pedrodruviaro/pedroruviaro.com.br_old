@@ -17,7 +17,7 @@ const imagePath = computed(() => {
 
 <template>
   <article
-    class="cursor-pointer grid gap-7 border border-brand-700 rounded-2xl p-4 custom-shadow flex-1 md:grid-rows-[max-content_1fr] focus:outline-2"
+    class="cursor-pointer grid gap-7 bg-brand-100 border border-brand-700 rounded-2xl p-4 custom-shadow flex-1 md:grid-rows-[max-content_1fr] focus:outline-2"
     @click="emits('see-single-post', props.post._path)"
     @keydown.enter="emits('see-single-post', props.post._path)"
     tabindex="0"

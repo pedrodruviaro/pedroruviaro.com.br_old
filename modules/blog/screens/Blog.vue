@@ -11,18 +11,20 @@ function handleSeeSinglePost(slug: string) {
 </script>
 
 <template>
-  <UiContainer class="spacer">
-    <BlogHeroSection />
+  <main class="bg-brand-300">
+    <UiContainer class="spacer">
+      <BlogHeroSection />
 
-    <section>
-      <BlogPostPreviewCardLoader :loading="loadingPosts" :count="3">
-        <BlogPostPreviewCard
-          @see-single-post="handleSeeSinglePost"
-          v-for="post in posts"
-          :key="post._path"
-          :post="post"
-        />
-      </BlogPostPreviewCardLoader>
-    </section>
-  </UiContainer>
+      <section>
+        <BlogPostPreviewCardLoader :loading="loadingPosts" :count="3">
+          <BlogPostPreviewCard
+            @see-single-post="handleSeeSinglePost"
+            v-for="post in posts"
+            :key="post._path"
+            :post="post"
+          />
+        </BlogPostPreviewCardLoader>
+      </section>
+    </UiContainer>
+  </main>
 </template>

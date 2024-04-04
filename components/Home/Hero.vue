@@ -1,5 +1,7 @@
 <template>
-  <section class="spacer bg-brand-300">
+  <section
+    class="spacer bg-brand-300 relative after:absolute after:translate-x-[-50%] after:left-[50%] after:bg-brand-700 after:rounded after:bottom-[-1.5px] after:w-full after:max-w-[40rem] after:mx-auto after:h-[3px]"
+  >
     <UiContainer class="grid gap-10 lg:grid-cols-[2fr_1fr]">
       <div>
         <NuxtImg
@@ -34,3 +36,5 @@
     </UiContainer>
   </section>
 </template>
+
+<style scoped></style>
