@@ -6,7 +6,7 @@ const emits = defineEmits<{
 
 <template>
   <UiContainer as="section" class="spacer">
-    <h2 class="font-bold text-center text-2xl lg:text-3xl mb-7">
+    <h2 class="font-bold text-center text-3xl md:text-4xl mb-7">
       O que eu ando escrevendo
     </h2>
 

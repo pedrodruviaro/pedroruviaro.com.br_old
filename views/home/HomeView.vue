@@ -18,6 +18,7 @@ await fetchPosts()
 <template>
   <div>
     <HomeHero />
+    <HomeAbout />
     <HomeLatestPosts @see-more-posts="handleSeeMorePosts">
       <template #posts>
         <BlogPostPreviewCardLoader
