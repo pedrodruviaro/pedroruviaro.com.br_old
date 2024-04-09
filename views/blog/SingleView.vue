@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <UiContainer as="main" class="py-10">
+  <UiContainer class="py-10">
     <div>
       <NuxtLink to="/blog" class="flex items-center gap-2 font-semibold mb-10">
         <NuxtImg

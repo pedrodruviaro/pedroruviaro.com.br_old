@@ -11,7 +11,7 @@ function handleSeeSinglePost(slug: string) {
 </script>
 
 <template>
-  <main class="bg-brand-300">
+  <div class="bg-brand-300">
     <UiContainer class="spacer">
       <BlogHeroSection />
 
@@ -26,5 +26,5 @@ function handleSeeSinglePost(slug: string) {
         </BlogPostPreviewCardLoader>
       </section>
     </UiContainer>
-  </main>
+  </div>
 </template>

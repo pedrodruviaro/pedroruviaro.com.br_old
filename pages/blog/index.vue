@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Blog from "~/modules/blog/screens/Blog.vue"
+import BlogView from "~/views/blog/BlogView.vue"
 
 useSeoMeta({
   title: "Blog",
@@ -8,7 +8,5 @@ useSeoMeta({
 </script>
 
 <template>
-  <main>
-    <Blog />
-  </main>
+  <BlogView />
 </template>

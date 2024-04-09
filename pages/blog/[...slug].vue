@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Single from "~/modules/blog/screens/Single.vue"
+import SingleView from "~/views/blog/SingleView.vue"
 </script>
 
 <template>
-  <Single :path="$route.path" />
+  <SingleView :path="$route.path" />
 </template>

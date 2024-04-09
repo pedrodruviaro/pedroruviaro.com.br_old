@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Home from "~/modules/home/screens/Home.vue"
+import HomeView from "~/views/home/HomeView.vue"
 
 useSeoMeta({
   title: "Home",
@@ -8,7 +8,5 @@ useSeoMeta({
 </script>
 
 <template>
-  <main>
-    <Home />
-  </main>
+  <HomeView />
 </template>

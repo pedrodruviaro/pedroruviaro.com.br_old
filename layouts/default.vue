@@ -44,7 +44,9 @@ watch(
       v-if="false"
     />
     <UiHeader />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <UiFooter />
   </div>
 </template>
