@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps<{
+  path: string
+}>()
+</script>
 
 <template>
   <UiContainer as="main" class="py-10">
@@ -16,7 +20,24 @@
     <div
       class="prose-sm md:prose md:max-w-[100%] mx-auto prose-code:block prose-code:max-w-full prose-code:overflow-auto prose-a:no-underline mt-10"
     >
-      <slot />
+      <div
+        class="prose md:max-w-[100%] mx-auto prose-code:block prose-code:max-w-full prose-code:overflow-auto prose-a:no-underline"
+      >
+        <ContentDoc :path="props.path">
+          <template v-slot="{ doc }">
+            <div class="flex items-center justify-between mb-4">
+              <BlogBadgeTag :content="doc.tag" />
+              <BlogBadgeDate :date="doc.date" />
+            </div>
+
+            <ContentRenderer :value="doc" />
+          </template>
+
+          <template #not-found>
+            <BlogDocumentNotFound />
+          </template>
+        </ContentDoc>
+      </div>
     </div>
   </UiContainer>
 </template>
