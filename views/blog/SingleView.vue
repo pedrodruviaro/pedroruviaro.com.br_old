@@ -1,8 +1,4 @@
-<script setup lang="ts">
-const props = defineProps<{
-  path: string
-}>()
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <UiContainer class="py-10">
@@ -17,27 +13,6 @@ const props = defineProps<{
       </NuxtLink>
     </div>
 
-    <div
-      class="prose-sm md:prose md:max-w-[100%] mx-auto prose-code:block prose-code:max-w-full prose-code:overflow-auto prose-a:no-underline mt-10"
-    >
-      <div
-        class="prose md:max-w-[100%] mx-auto prose-code:block prose-code:max-w-full prose-code:overflow-auto prose-a:no-underline"
-      >
-        <ContentDoc :path="props.path">
-          <template v-slot="{ doc }">
-            <div class="flex items-center justify-between mb-4">
-              <BlogBadgeTag :content="doc.tag" />
-              <BlogBadgeDate :date="doc.date" />
-            </div>
-
-            <ContentRenderer :value="doc" />
-          </template>
-
-          <template #not-found>
-            <BlogDocumentNotFound />
-          </template>
-        </ContentDoc>
-      </div>
-    </div>
+    <slot />
   </UiContainer>
 </template>

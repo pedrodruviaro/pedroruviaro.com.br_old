@@ -37,6 +37,6 @@ export default defineNuxtConfig({
   robots: {
     UserAgent: "*",
     Allow: "/",
-    Sitemap: (req) => `https://${req.headers.host}/sitemap.xml`,
+    Sitemap: (req: any) => `https://${req.headers.host}/sitemap.xml`,
   },
 })
